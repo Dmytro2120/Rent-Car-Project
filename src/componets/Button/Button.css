@@ -104,3 +104,7 @@
 .button-minimal:disabled {
   color: var(--secondary-400);
 }
+
+.button-icon-only {
+  padding: 0 8px;
+}

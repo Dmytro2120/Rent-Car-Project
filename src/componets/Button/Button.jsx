@@ -10,14 +10,14 @@ export const Button = ({
   onClick,
   size,
   disabled,
-  children = defaultChildren,
+  children,
   icon,
 }) => {
   // console.log(variant, !variant);
   // console.log(variant, variants.includes(variant));
   if (!variant || !variants.includes(variant))
     throw new Error("The 'variant' prop is required.");
-  // console.log(onClick);
+  console.log(icon);
 
   return (
     <button
@@ -29,6 +29,7 @@ export const Button = ({
         size === "small" && "button-size-small",
         size === "medium" && "button-size-medium",
         size === "large" && "button-size-large",
+        icon && !children && "button-icon-only",
       )}
       onClick={onClick}
       disabled={disabled}
