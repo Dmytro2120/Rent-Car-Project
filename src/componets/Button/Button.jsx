@@ -38,6 +38,3 @@ export const Button = ({
     </button>
   );
 };
-n;
-
-export default Button;
