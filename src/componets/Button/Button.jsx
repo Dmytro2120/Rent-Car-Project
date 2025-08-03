@@ -25,7 +25,7 @@ export const Button = ({
         "button",
         variant === "primary" && "button-primary",
         variant === "secondary" && "button-secondary",
-        variant === "minimal" && "button-minimal",
+        variant === "e" && "button-minimal",
         size === "small" && "button-size-small",
         size === "medium" && "button-size-medium",
         size === "large" && "button-size-large",
