@@ -1,6 +1,6 @@
 export const Card = ({
-  favorit,
-  onFavorit,
+  favourit,
+  onFavourit,
   name,
   type,
   image,
@@ -12,7 +12,7 @@ export const Card = ({
 }) => {
   return (
     <div>
-      {favorit} {onFavorit} {name} {type} {image} {fuelCapacity} {gearbox}
+      {favourit} {onFavourit} {name} {type} {image} {fuelCapacity} {gearbox}
       {numberOfSeats} {price} {onRent}
     </div>
   );

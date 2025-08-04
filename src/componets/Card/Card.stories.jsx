@@ -9,8 +9,8 @@ export default {
 
 export const Default = {
   args: {
-    favorit: true,
-    onFavorit: fn,
+    favourit: true,
+    onFavourit: fn,
     name: "CR-V",
     type: "SUV",
     image: null,
