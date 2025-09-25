@@ -1,0 +1,24 @@
+.image__wrapper {
+  position: relative;
+}
+
+.image__wrapper::after {
+  content: "";
+  background: #ffffff;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 50%
+  );
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.image__element {
+  width: 100%;
+  height: 100%;
+}

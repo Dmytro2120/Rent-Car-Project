@@ -1,0 +1,14 @@
+.number-of-seats {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.number-of-seats__icon {
+  font-size: 24px;
+}
+
+.number-of-seats__text {
+  color: var(--secondary-300);
+  font-size: 14px;
+}

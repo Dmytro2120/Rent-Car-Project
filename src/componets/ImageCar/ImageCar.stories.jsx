@@ -1,8 +1,8 @@
 import React from "react";
-import Image from "./Image";
+import ImageCar from "./ImageCar";
 
 export default {
-  title: "Components/Image",
+  title: "Components/ImageCar",
   argTypes: {
     src: { control: "text" },
     alt: { control: "text" },
@@ -11,11 +11,11 @@ export default {
   },
 };
 
-const Template = (args) => <Image {...args} />;
+const Template = (args) => <ImageCar {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  src: "/src/componets/Image/Car.png",
+  src: "/src/assets/Car.png",
   alt: "Vw Image",
   width: 248,
   height: 100,
