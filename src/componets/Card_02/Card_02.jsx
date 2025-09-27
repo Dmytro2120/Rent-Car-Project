@@ -6,9 +6,9 @@ import Gearbox from "../Gearbox/Gearbox";
 import ImageCar from "../ImageCar/ImageCar";
 import NumberOfSeats from "../NumberOfSeats/NumberOfSeats";
 import Price from "../Price/Price";
-import "./Card.css";
+import "./Card_02.css";
 
-export const Card = ({
+export const Card_02 = ({
   favourit,
   onFavourit,
   name,
@@ -21,17 +21,19 @@ export const Card = ({
   onRent,
 }) => {
   return (
-    <div className="card">
+    <div className="card_02">
       <Heard onClick={onFavourit} value={favourit} />
       <CarBasicInfo name={name} type={type} />
-      <span className="card-image">
-        <ImageCar src={image} />
+      <span className="details_02">
+        <span className="card-image_02">
+          <ImageCar src={image} />
+        </span>
+        <span className="parameters">
+          <FuelCapacity value={fuelCapacity} /> <Gearbox value={gearbox} />
+          <NumberOfSeats value={numberOfSeats} />
+        </span>
       </span>
-      <span className="details">
-        <FuelCapacity value={fuelCapacity} /> <Gearbox value={gearbox} />
-        <NumberOfSeats value={numberOfSeats} />
-      </span>
-      <span className="card-footer">
+      <span className="card-footer_02">
         <Price value={price} />{" "}
         <Button
           variant="primary"

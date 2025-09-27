@@ -1,6 +1,6 @@
-.card {
-  width: 304px;
-  height: 388px;
+.card_02 {
+  width: 327px;
+  height: 240px;
   background: #fff;
   border: 1px solid #e5e5e5;
   border-radius: 8px;
@@ -11,36 +11,40 @@
   box-sizing: border-box;
 }
 
-.card .heard {
+.card_02 .heard {
   position: absolute;
   top: 24px;
   right: 24px;
 }
 
-.card .car-basic-info {
+.card_02 .car-basic-info {
   position: relative;
-  margin-bottom: 50px;
-  left: 12px;
   display: flex;
   flex-direction: column;
+  left: 12px;
 }
 
-.card-image {
+.card-image_02 {
+  width: 160px;
+  height: 64px;
   display: flex;
   justify-content: center;
 }
 
-.card .details {
+.parameters {
   display: flex;
-  justify-content: space-between;
-  margin-top: 54px;
-  font-size: 24px;
-  left: 24px;
+  align-content: stretch;
+  flex-direction: column;
 }
 
-.card-footer {
+.card_02 .details_02 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-footer_02 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 24px;
+  margin-top: 36px;
 }

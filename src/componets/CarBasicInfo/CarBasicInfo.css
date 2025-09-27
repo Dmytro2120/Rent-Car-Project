@@ -1,6 +1,7 @@
 .car-basic-info {
-  display: flex;
-  flex-direction: column;
+  display: inline-block;
+  width: auto;
+  max-width: fit-content;
 }
 
 .car-basic-info__name {
