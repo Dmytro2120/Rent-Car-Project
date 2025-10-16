@@ -3,9 +3,11 @@
   align-items: center;
   cursor: pointer;
   justify-content: center;
-  font-weight: 500;
+  font-weight: 600;
   border: none;
   gap: 6px;
+  font-family: "Plus Jakarta Sans", Avenir, Helvetica, Arial, sans-serif;
+  font-size: 12px;
 }
 .button:disabled {
   cursor: not-allowed;
@@ -28,6 +30,7 @@
   height: 52px;
   border-radius: 4px;
   padding: 0 24px;
+  font-size: 16px;
 }
 
 .button-primary {

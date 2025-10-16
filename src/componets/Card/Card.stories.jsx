@@ -31,3 +31,22 @@ export const Default = {
     onRent: fn,
   },
 };
+
+export const Responsive = {
+  globals: {
+    viewport: { value: "mobile1", isRotated: false },
+  },
+
+  args: {
+    favourit: false,
+    onFavourit: () => {},
+    name: "CR-V",
+    type: "SUV",
+    image: "/src/assets/Car.png",
+    fuelCapacity: 80,
+    gearbox: "Manual",
+    numberOfSeats: 6,
+    price: 80.0,
+    onRent: fn,
+  },
+};

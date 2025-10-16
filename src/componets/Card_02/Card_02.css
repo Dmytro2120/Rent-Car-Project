@@ -5,46 +5,37 @@
   border: 1px solid #e5e5e5;
   border-radius: 8px;
   padding: 16px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  gap: 12px;
   position: relative;
-  box-sizing: border-box;
 }
 
-.card_02 .heard {
-  position: absolute;
-  top: 24px;
-  right: 24px;
-}
-
-.card_02 .car-basic-info {
-  position: relative;
+.card-top {
+  align-items: start;
   display: flex;
-  flex-direction: column;
-  left: 12px;
-}
-
-.card-image_02 {
-  width: 160px;
-  height: 64px;
-  display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .parameters {
   display: flex;
   align-content: stretch;
   flex-direction: column;
-}
-
-.card_02 .details_02 {
-  display: flex;
-  justify-content: space-between;
+  padding-bottom: 18px;
+  gap: 16px;
 }
 
 .card-footer_02 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 36px;
+  width: 100%;
+}
+
+.card-iner_02 {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 50px;
+  width: 100%;
 }

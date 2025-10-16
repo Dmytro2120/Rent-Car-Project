@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   gap: 6px;
+  line-height: 1;
 }
 
 .number-of-seats__icon {
@@ -11,4 +12,16 @@
 .number-of-seats__text {
   color: var(--secondary-300);
   font-size: 14px;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .number-of-seats__text {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .number-of-seats__icon {
+    font-size: 14px;
+  }
 }

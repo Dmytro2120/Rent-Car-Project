@@ -8,6 +8,7 @@ const Gearbox = ({ value }) => (
       width="1em"
       height="1em"
       fill="none"
+      viewBox="0 0 24 24"
     >
       <path
         fill="#90A3BF"

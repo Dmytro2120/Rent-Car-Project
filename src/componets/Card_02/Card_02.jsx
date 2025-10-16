@@ -22,17 +22,19 @@ export const Card_02 = ({
 }) => {
   return (
     <div className="card_02">
-      <Heard onClick={onFavourit} value={favourit} />
-      <CarBasicInfo name={name} type={type} />
-      <span className="details_02">
-        <span className="card-image_02">
-          <ImageCar src={image} />
-        </span>
+      <div className="card-top">
+        <CarBasicInfo name={name} type={type} />
+
+        <Heard onClick={onFavourit} value={favourit} />
+      </div>
+      <div className="card-iner_02">
+        <ImageCar src={image} />
+
         <span className="parameters">
           <FuelCapacity value={fuelCapacity} /> <Gearbox value={gearbox} />
           <NumberOfSeats value={numberOfSeats} />
         </span>
-      </span>
+      </div>
       <span className="card-footer_02">
         <Price value={price} />{" "}
         <Button

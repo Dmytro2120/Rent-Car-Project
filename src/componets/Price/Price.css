@@ -11,3 +11,13 @@
   font-size: 14px;
   font-weight: 700;
 }
+
+@media (max-width: 768px) {
+  .price__value {
+    font-size: 16px;
+  }
+
+  .price__day {
+    font-size: 12px;
+  }
+}
