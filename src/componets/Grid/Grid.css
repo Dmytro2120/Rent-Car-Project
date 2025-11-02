@@ -18,3 +18,8 @@
   flex-wrap: wrap;
   gap: 32px;
 }
+
+.button-more-car {
+  display: flex;
+  justify-content: center;
+}

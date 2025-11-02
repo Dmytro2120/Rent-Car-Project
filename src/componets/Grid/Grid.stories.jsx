@@ -14,6 +14,7 @@ export const Default = {
   args: {
     cars: [
       {
+        id: "bmw-m3-1",
         favourit: false,
         onFavourit: () => {},
         name: "BMW M3",
@@ -26,6 +27,7 @@ export const Default = {
         onRent: fn,
       },
       {
+        id: "koenigsegg-1",
         favourit: false,
         onFavourit: () => {},
         name: "Koenigsegg",
@@ -38,6 +40,7 @@ export const Default = {
         onRent: fn,
       },
       {
+        id: "nissan-gt-r-1",
         favourit: false,
         onFavourit: () => {},
         name: "Nissan GT - R",
@@ -50,6 +53,7 @@ export const Default = {
         onRent: fn,
       },
       {
+        id: "rolls-royce-1",
         favourit: false,
         onFavourit: () => {},
         name: "Rolls - Royce",
@@ -62,6 +66,7 @@ export const Default = {
         onRent: fn,
       },
       {
+        id: "rush-1",
         favourit: false,
         onFavourit: () => {},
         name: "All New Rush",
@@ -74,6 +79,7 @@ export const Default = {
         onRent: fn,
       },
       {
+        id: "mg-zx-1",
         favourit: false,
         onFavourit: () => {},
         name: "MG ZX Exclusice",
@@ -86,6 +92,7 @@ export const Default = {
         onRent: fn,
       },
       {
+        id: "cr-v-1",
         favourit: false,
         onFavourit: () => {},
         name: "CR-V",
@@ -98,6 +105,7 @@ export const Default = {
         onRent: fn,
       },
       {
+        id: "mg-zs-1",
         favourit: false,
         onFavourit: () => {},
         name: "New MG ZS",

@@ -17,7 +17,6 @@ export const Button = ({
   // console.log(variant, variants.includes(variant));
   if (!variant || !variants.includes(variant))
     throw new Error("The 'variant' prop is required.");
-  console.log(icon);
 
   return (
     <button
