@@ -31,6 +31,10 @@
   --secondary-900: #040815;
 }
 
+body {
+  background-color: #f6f7f9;
+}
+
 .container {
   width: 100%;
   padding: 5px;

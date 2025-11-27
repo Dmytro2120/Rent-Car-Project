@@ -1,0 +1,75 @@
+.select-car {
+  height: 136px;
+  width: 582px;
+  border-radius: 10px;
+  background-color: var(--primary-0);
+}
+
+.select-head {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+  position: relative;
+  top: 24px;
+  left: 33px;
+}
+
+.name-select {
+  padding-left: 8px;
+  font-weight: 500;
+}
+
+.selected {
+  width: 486px;
+  height: 48px;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  top: 16px;
+}
+
+.border-select {
+  border-right: 1px solid #c3d4e9;
+}
+
+.pick-up-title {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.react-select .react-select__value-container {
+  padding: 0;
+}
+
+.react-select .react-select__input-container {
+  width: 104px;
+}
+
+.react-select .react-select__control {
+  border: none;
+  background-color: none;
+  display: flex;
+  align-items: center;
+}
+
+.react-select .react-select__indicator-separator {
+  display: none;
+}
+
+.react-select .react-select__placeholder {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.react-select .react-select__indicators {
+  font-size: 14px;
+}
+
+.react-select .react-select__indicator svg {
+  color: var(--secondary-500);
+}
+
+.react-select .react-select__single-value {
+  font-size: 12px;
+  color: var(--secondary-300);
+}
