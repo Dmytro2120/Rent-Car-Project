@@ -1,5 +1,5 @@
 .card {
-  width: 304px;
+  width: 100%;
   height: 388px;
   background: #fff;
   border: 1px solid #e5e5e5;
@@ -33,11 +33,12 @@
 .card-iner {
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: center;
   gap: 50px;
-  width: 100%;
   flex-direction: column;
   margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (max-width: 768px) {

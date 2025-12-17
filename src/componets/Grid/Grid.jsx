@@ -5,7 +5,7 @@ import { Button } from "../Button/Button";
 import { carsData } from "./Grid.data";
 import "./Grid.css";
 
-export const Grid = ({}) => {
+export const Grid = ({ }) => {
   const [favourites, setFavorites] = useState([]);
   const [index, setIndex] = useState(8);
 
@@ -46,18 +46,19 @@ export const Grid = ({}) => {
           />
         ))}
       </div>
-      <span className="button-more-car">
-        {cars.length === carsData.length ? null : (
-          <Button
-            variant="primary"
-            size="medium"
-            children="Show more car"
-            onClick={handleShowMoreCar}
-          />
-        )}
-
+      <div className="footer-cars">
+        <span className="button-more-car">
+          {cars.length === carsData.length ? null : (
+            <Button
+              variant="primary"
+              size="medium"
+              children="Show more car"
+              onClick={handleShowMoreCar}
+            />
+          )}
+        </span>
         <div className="number-car"> {carsData.length} car</div>
-      </span>
+      </div>
     </div>
   );
 };

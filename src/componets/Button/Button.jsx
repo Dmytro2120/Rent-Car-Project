@@ -12,6 +12,7 @@ export const Button = ({
   disabled,
   children,
   icon,
+  className,
 }) => {
   // console.log(variant, !variant);
   // console.log(variant, variants.includes(variant));
@@ -29,9 +30,11 @@ export const Button = ({
         size === "medium" && "button-size-medium",
         size === "large" && "button-size-large",
         icon && !children && "button-icon-only",
+        className
       )}
       onClick={onClick}
       disabled={disabled}
+
     >
       {icon} {children}
     </button>

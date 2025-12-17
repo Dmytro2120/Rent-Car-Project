@@ -5,6 +5,9 @@
   display: grid;
   align-items: center;
   justify-content: center;
+  gap: 16px;
+  padding: 24px 48px;
+  flex: 1;
 }
 
 .select-head {
@@ -20,7 +23,7 @@
 .selected {
   width: 486px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .border-select {
