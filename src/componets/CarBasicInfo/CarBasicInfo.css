@@ -1,0 +1,31 @@
+.car-basic-info {
+  display: inline-grid;
+  width: auto;
+  max-width: fit-content;
+  gap: 4px;
+}
+
+.car-basic-info__name {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--secondary-500);
+  line-height: 1;
+}
+
+.car-basic-info__type {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--secondary-300);
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .car-basic-info__name {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .car-basic-info__type {
+    font-size: 12px;
+    font-weight: 500;
+  }
+}

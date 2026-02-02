@@ -1,0 +1,26 @@
+.gearbox {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  line-height: 1;
+}
+
+.gearbox__icon {
+  font-size: 24px;
+}
+
+.gearbox__text {
+  color: var(--secondary-300);
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .gearbox__text {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .gearbox__icon {
+    font-size: 14px;
+  }
+}

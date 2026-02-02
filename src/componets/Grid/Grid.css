@@ -1,0 +1,58 @@
+.categories {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.categories-name-grid {
+  padding: 10px 20px;
+  color: var(--secondary-300);
+  font-size: 16px;
+  font-weight: 600;
+  max-width: fit-content;
+}
+
+.grid {
+  display: grid;
+  justify-content: center;
+  gap: 32px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer-cars {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-more-car {
+  display: flex;
+  align-items: center;
+}
+
+.number-car {
+  position: absolute;
+  right: 0;
+}
+
+@media (max-width: 1375px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 1025px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 770px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
