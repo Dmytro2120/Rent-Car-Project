@@ -5,7 +5,7 @@ import { Button } from "../Button/Button";
 import { carsData } from "./Grid.data";
 import "./Grid.css";
 
-export const Grid = ({ }) => {
+export const Grid = ({ carsData }) => {
   const [favourites, setFavorites] = useState([]);
   const [index, setIndex] = useState(8);
 

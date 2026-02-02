@@ -10,6 +10,8 @@ export const carsData = [
     gearbox: "Automat",
     numberOfSeats: 4,
     price: 90.0,
+    pickUp: { city: "KRK", from: new Date(2026, 0, 25, 13, 15) },
+    dropOff: { city: "LDZ", to: new Date(2026, 3, 26, 13, 15) },
   },
   {
     id: "koenigsegg-1",
@@ -22,6 +24,8 @@ export const carsData = [
     gearbox: "Automat",
     numberOfSeats: 2,
     price: 100.0,
+    pickUp: { city: "KRK", from: new Date(2026, 0, 26, 12, 15) },
+    dropOff: { city: "KRK", to: new Date(2026, 2, 1, 13, 15) },
   },
   {
     id: "nissan-gt-r-1",
@@ -34,6 +38,8 @@ export const carsData = [
     gearbox: "Automat",
     numberOfSeats: 2,
     price: 89.0,
+    pickUp: { city: "LDZ", from: new Date(2026, 0, 27, 13, 0) },
+    dropOff: { city: "LDZ", to: new Date(2026, 2, 23, 13, 15) },
   },
   {
     id: "rolls-royce-1",
@@ -46,6 +52,11 @@ export const carsData = [
     gearbox: "Automat",
     numberOfSeats: 4,
     price: 100.0,
+    pickUp: {
+      city: "KRK",
+      from: new Date(2026, 0, 26, 13, 15),
+    },
+    dropOff: { city: "LDZ", to: new Date(2026, 2, 26, 13, 15) },
   },
   {
     id: "rush-1",
@@ -58,6 +69,8 @@ export const carsData = [
     gearbox: "Manual",
     numberOfSeats: 6,
     price: 72.0,
+    pickUp: { city: "KRK", from: new Date(2026, 1, 28, 13, 15) },
+    dropOff: { city: "KRK", to: new Date(2026, 2, 23, 13, 15) },
   },
   {
     id: "mg-zx-1",
@@ -70,6 +83,8 @@ export const carsData = [
     gearbox: "Manual",
     numberOfSeats: 4,
     price: 69.99,
+    pickUp: { city: "WAW" },
+    dropOff: { city: "WAW" },
   },
   {
     id: "cr-v-1",

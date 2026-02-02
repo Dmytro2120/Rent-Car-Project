@@ -11,7 +11,7 @@ const CustomOption = ({ innerProps, children }) => {
   return <div {...innerProps}>{children}</div>;
 };
 
-export const DropOff = ({}) => {
+export const DropOff = ({ onCityChange, onTimeChange, onDateChange }) => {
   return (
     <div className="select-car">
       <div className="select-head">
@@ -60,12 +60,13 @@ export const DropOff = ({}) => {
             name="city"
             options={CitySelect}
             classNamePrefix={"react-select"}
+            onChange={(value) => { onCityChange(value) }}
           />
         </span>
         <span className="border-select"></span>
         <span className="select-date">
           <span className="pick-up-title">Date</span>
-          <DaySelect />
+          <DaySelect onChange={(value) => { onDateChange(value) }} />
         </span>
         <span className="border-select"></span>
         <span className="select-time">
@@ -95,6 +96,7 @@ export const DropOff = ({}) => {
             name="time"
             options={TimeSelect}
             classNamePrefix={"react-select"}
+            onChange={(value) => { onTimeChange(value) }}
           />
         </span>
       </div>

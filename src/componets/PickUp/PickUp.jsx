@@ -7,11 +7,10 @@ import "./PickUp.css";
 import { DaySelect } from "../DaySelect/DaySelect";
 import { TimeSelect } from "../../assets/City/Time";
 
-const CustomOption = ({ innerProps, children }) => {
-  return <div {...innerProps}>{children}</div>;
-};
 
-export const PickUp = ({}) => {
+
+export const PickUp = ({ onCityChange, onTimeChange, onDateChange }) => {
+
   return (
     <div className="select-car">
       <div className="select-head">
@@ -60,12 +59,13 @@ export const PickUp = ({}) => {
             name="city"
             options={CitySelect}
             classNamePrefix={"react-select"}
+            onChange={(value) => { onCityChange(value) }}
           />
         </span>
         <span className="border-select"></span>
         <span className="select-date">
           <span className="pick-up-title">Date</span>
-          <DaySelect />
+          <DaySelect onChange={(value) => { onDateChange(value) }} />
         </span>
         <span className="border-select"></span>
         <span className="select-time">
@@ -95,6 +95,7 @@ export const PickUp = ({}) => {
             name="time"
             options={TimeSelect}
             classNamePrefix={"react-select"}
+            onChange={(value) => { onTimeChange(value) }}
           />
         </span>
       </div>

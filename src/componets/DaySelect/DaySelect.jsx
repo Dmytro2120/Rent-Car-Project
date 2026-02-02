@@ -4,7 +4,7 @@ import { useEffect, useId, useRef, useState } from "react";
 import { format, isValid, parse } from "date-fns";
 import "./DaySelect.css";
 
-export const DaySelect = () => {
+export const DaySelect = ({ onChange }) => {
   const dialogRef = useRef(null);
   const dialogId = useId();
   const headerId = useId();
@@ -33,6 +33,7 @@ export const DaySelect = () => {
   }, [isDialogOpen]);
 
   const handleDayPickerSelect = (date) => {
+    onChange(date)
     if (!date) {
       setInputValue("");
       setSelectedDate(undefined);
@@ -44,6 +45,7 @@ export const DaySelect = () => {
   };
 
   const handleInputChange = (e) => {
+
     setInputValue(e.target.value);
     const parsedDate = parse(e.target.value, "dd-MM-yyyy", new Date());
 
