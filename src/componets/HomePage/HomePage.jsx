@@ -25,29 +25,29 @@ export const HomePage = () => {
     );
   });
 
-  console.log(form);
-  console.log("cars test", carsByCity);
+  // console.log(form);
+  // console.log("cars test", carsByCity);
   const carsByDate = carsByCity.filter((car) => {
     const from = car.pickUp?.from;
     const to = car.dropOff?.to;
     if (from && to && form.pickUp.date && form.dropOff.date) {
       const isPickUpValid = !isBefore(form.pickUp.date, from);
 
-      console.log(
-        "test b",
-        format(form.pickUp.date, "dd-MM-yyyy HH:mm"),
-        format(from, "dd-MM-yyyy HH:mm"),
+      // console.log(
+      //   "test b",
+      //   format(form.pickUp.date, "dd-MM-yyyy HH:mm"),
+      //   format(from, "dd-MM-yyyy HH:mm"),
 
-        isPickUpValid,
-      );
+      //   isPickUpValid,
+      // );
       const isDropOffValid = !isAfter(form.dropOff.date, to);
-      console.log(
-        "test after",
-        format(form.dropOff.date, "dd-MM-yyyy HH:mm"),
-        format(to, "dd-MM-yyyy HH:mm"),
+      // console.log(
+      //   "test after",
+      //   format(form.dropOff.date, "dd-MM-yyyy HH:mm"),
+      //   format(to, "dd-MM-yyyy HH:mm"),
 
-        isDropOffValid,
-      );
+      //   isDropOffValid,
+      // );
 
       return isPickUpValid && isDropOffValid;
     }
